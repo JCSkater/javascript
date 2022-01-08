@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {font: 12pt Arial;}
+        button {font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="inicio()">Clique para calcular</button>
+    <section id="resultado">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+    <script>
+        function inicio() {
+            let n = Number(window.prompt('Digite um número:'))
+            let res = window.document.getElementById('resultado')
+            let val1 = n * n
+            let val2 = n * n * n
+            let abs = Math.abs(`${n}`)
+            let trunc = Math.trunc(`${n}`)
+            let floor = Math.floor(`${n}`)
+            let sqrt = Math.sqrt(`${n}`)
+            let cbrt = Math.cbrt(`${n}`)
+            let pow1 = Math.pow(`${n}, 2`)
+            let pow2 = Math.pow(`${n}, 3`)
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong>
+                <hr>
+                <p>O seu valor absoluto é ${abs}
+                <p>A sua parte inteira é ${trunc}
+                <p>O valor inteiro mais próximo é ${floor}
+                <p>A sua raiz quadrada é ${sqrt}
+                <p>A sua raiz cúbica é ${cbrt}
+                <p>O valor de ${n}<sup>2</sup> é ${val1}
+                <p>O valor de ${n}<sup>3</sup> é ${val2}`
+        }
+    </script>
+</body>
+</html>
