@@ -1,8 +1,15 @@
 var c = 1
-while (c <= 6) {
+do {
     console.log(`passo ${c}`)
     c++ // c = c + 1
-}
+} while (c <= 6)
+
+/*
+var c = 1
+while (c <= 6) {
+    console.log(`passo ${c}`)
+    c++
+*/
 
 /*
 console.log('Tudo bem?')
