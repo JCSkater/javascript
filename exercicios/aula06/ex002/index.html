@@ -12,11 +12,12 @@
 </head>
 <body>
     <h1>Interagindo com um botão</h1>
-    <button onclick="clicou()">Clica em mim!</button>
+    <button id="botao">Clica em mim!</button>
     <script>
-        function clicou() {
-            window.alert('Você clicou no botão!')
-        }
+        let botao = document.querySelector('#botao');
+        botao.addEventListener('click', function(){
+            window.alert('cliquei!')
+        })
     </script>
 </body>
 </html>
