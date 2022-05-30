@@ -1,1 +1,1 @@
-alert('olá!')
+﻿ console.log("hello world");
